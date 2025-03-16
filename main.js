@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const dropdownToggle = document.querySelector(".dropdown-toggle");
     const dropdownMenu = document.querySelector(".card");
     const langOptions = document.querySelectorAll(".lang-option");
+    const s_lan = document.querySelector(".s_lan");
 
     // Burger menyu funksiyasi
     burgerBtn.addEventListener("click", () => {
