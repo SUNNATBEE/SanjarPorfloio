@@ -23,14 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
             about: "Haqida",
             projects: "Loyihalar",
             contact: "Bog’lanish",
-            language: "Til tanlash"
+            language: "Til"
         },
         en: {
             home: "Home",
             about: "About",
             projects: "Projects",
             contact: "Contact",
-            language: "Select Language"
+            language: "Language"
         },
     };
 

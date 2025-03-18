@@ -12,6 +12,43 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body class="bg-[#0F0F0F]">
+
+    
+
+    <div class="header__bottom">
+        <div class="container">
+            <ul class="pages">
+                <li>
+                    <a href="./index.html">
+                        <img src="./images/home.png" alt="">
+                        <span>Uy</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="./haqida.html">
+                        <img src="./images/info.png" alt="">
+                        <span>Haqida</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="./loyihalar.html">
+                        <img src="./images/category.png" alt="">
+                        <span>Loyihalar</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="./bog'lanish.html">
+                        <img src="./images/support.png" alt="">
+                        <span>Bog'lanish</span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
     
     <header class="header py-5">
         <div class="container">
@@ -20,7 +57,7 @@
                     <button class="header__burger__btn">
                         <img src="./images/hamburger_menu.svg" alt="Menu">
                     </button>
-                    <a href="#" class="header__logo">PORTFOLIO.<span class="header__logo--green">UZ</span></p>
+                    <a href="./index.html" class="header__logo">PORTFOLIO.<span class="header__logo--green">UZ</span></p>
                 </div>
                 <ul class="header__list">
                     <li class="header__item">
@@ -43,7 +80,8 @@
 
                     <li class="dropdown">
                         <span class="shadow dropdown-toggle" data-lang="language">
-                            <img src="./images/select_language.png" class="s_lan" alt="">Til
+                            <img src="./images/select_language.png" class="s_lan" alt="">
+                            <img src="./images/translate.png" alt="">Til
                         </span>
                         <div class="card hidden">
                             <p class="heading lang-option" data-lang="uz">
@@ -58,11 +96,12 @@
             </nav>
         </div>
     </header>
+
     
     <main>
         <section class="hero">
             
-            <div class="container">
+            <!-- <div class="container"> -->
                 <div class="hero__content">
 
                     <div class="hero__left-sideBar">
@@ -71,10 +110,10 @@
                             <a href="#">
                                 <img src="./images/arrow_left_icon.png" alt="">
                             </a>
-                            <a href="#">
+                            <a href="./haqida.html">
                                 <img src="./images/arrow_right_icon.png" alt="">
                             </a>
-                            <a href="#">
+                            <a href="./index.html">
                                 <img src="./images/refresh_icon.png" alt="">
                             </a>
                         </div>
@@ -96,7 +135,7 @@
                                 <img src="./images/emil_icon.png" alt="">
                                 <div class="sites__item_right">
                                     <div class="sites__item_right_title">E-pochta</div>
-                                    <a href="#" class="sites__item_right_desc">pubgn9642@gmail.com</a>
+                                    <a href="mailto:gulnozaaripova45@gmail.com" class="sites__item_right_desc">sanjarbek2110@gmail.com</a>
                                 </div>
                             </div>
 
@@ -104,7 +143,7 @@
                                 <img src="./images/second_git_hub_logo.png" alt="">
                                 <div class="sites__item_right">
                                     <div class="sites__item_right_title">Github</div>
-                                    <a href="#" class="sites__item_right_desc">github.com/yaxyobekuz</a>
+                                    <a href="https://github.com/Sanjarbek2110" class="sites__item_right_desc">github.com/Sanjarbek2110</a>
                                 </div>
                             </div>
 
@@ -112,7 +151,7 @@
                                 <img src="./images/telegram_icon.png" alt="">
                                 <div class="sites__item_right">
                                     <div class="sites__item_right_title">Telegram</div>
-                                    <a href="#" class="sites__item_right_desc">t.me/mryaxyobek</a>
+                                    <a href="https://t.me/the_oken08" class="sites__item_right_desc">t.me/mrsanjarbek</a>
                                 </div>
                             </div>
 
@@ -120,7 +159,7 @@
                                 <img src="./images/phone_icon.png" alt="">
                                 <div class="sites__item_right">
                                     <div class="sites__item_right_title">Telefon raqam</div>
-                                    <a href="#" class="sites__item_right_desc">+998 (20) 007-77-29</a>
+                                    <a href="tel:+998943922110" class="sites__item_right_desc">+998 (94) 392-21-10</a>
                                 </div>
                             </div>
                         </div>
@@ -128,18 +167,20 @@
 
                     <div class="hero__right-sideBar">
                         
-                        <div class="hero__right__content">
-                            <h1 class="hero__right__content_title">Assalomu alaykum,  Men  <span>Raimov Sanjarbek</span>man</h1>
-
-                            <p class="hero__right__content_desc">Veb dasturchi va dizayner sifatida natijaga yo'naltirilgan ishchi. Veb-saytlar va veb-ilovalarni yaratish va boshqarish orqali umumiy mahsulot muvaffaqiyatiga erishish maqsadimdir.</p>
-
-                            <a href="#" class="hero__right__content_btn">Loyihalar</a>
+                        <div class="container">
+                            <div class="hero__right__content">
+                                <h1 class="hero__right__content_title">Assalomu alaykum,  Men  <span>Raimov Sanjarbek</span>man</h1>
+    
+                                <p class="hero__right__content_desc">Veb dasturchi va dizayner sifatida natijaga yo'naltirilgan ishchi. Veb-saytlar va veb-ilovalarni yaratish va boshqarish orqali umumiy mahsulot muvaffaqiyatiga erishish maqsadimdir.</p>
+    
+                                <a href="./haqida.html" class="hero__right__content_btn">Men haqimda</a>
+                            </div>
                         </div>
                     </div>
         
 
                 </div>
-            </div>
+            <!-- </div> -->
         </section>
     </main>
     
