@@ -69,3 +69,43 @@ document.addEventListener("DOMContentLoaded", function () {
     //     });
     // }
 });
+
+const userForm = document.querySelector("#form");
+const userName = document.querySelector("#ism");
+const userEmail = document.querySelector("#email1");
+const userDesck = document.querySelector("#izoh");
+
+const BOT_TOKEN = "7772442946:AAGsBqTDxTm20nn-NfIye37zGmBpnOZrxTs";  // Telegram bot token
+const CHAT_ID = "7221078203";  // Chat ID (o'zingiz yoki guruh)
+
+userForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = userName.value.trim();
+    const email = userEmail.value.trim();
+    const desc = userDesck.value.trim();
+
+    if (!name || !email || !desc) {
+        alert("Barcha maydonlarni to'ldiring!");
+        return;
+    }
+
+    const message = `📝 *Yangi So'rov!*%0A%0A👤 *Ism:* ${name}%0A📧 *Email:* ${email}%0A💬 *Izoh:* ${desc}`;
+
+    const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${message}&parse_mode=Markdown`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                alert("So'rov yuborildi! ✅");
+                userForm.reset(); // Formani tozalash
+            } else {
+                alert("Xatolik yuz berdi! ❌");
+            }
+        })
+        .catch(error => {
+            alert("Tarmoqda muammo bor! ❌");
+            console.error("Xatolik:", error);
+        });
+});
