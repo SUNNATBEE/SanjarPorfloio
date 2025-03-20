@@ -78,7 +78,7 @@ body {
     padding: 10px;
     border: 2px solid #FFF;
     width: 170px;
-
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,8 +116,8 @@ body {
     justify-content: space-between;
 }
 /* .shadow {
-    font-weight: bold;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+font-weight: bold;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 } */
 
 /* Mobil ekranda menyuni yashirish */
@@ -140,16 +140,40 @@ body {
 .hero__content{
     display: flex;
 }
+/* Skroll panelning kengligi */
+::-webkit-scrollbar {
+    width: 10px; /* Vertikal skroll uchun */
+    height: 10px; /* Gorizontal skroll uchun */
+}
+
+/* Skroll ichidagi yurgich (thumb) */
+::-webkit-scrollbar-thumb {
+    background: darkblue; /* Skroll rangini o'zgartiramiz */
+    border-radius: 5px;
+}
+
+/* Skroll foni (track) */
+::-webkit-scrollbar-track {
+    background: lightgray; /* Skroll yo'lining rangi */
+    border-radius: 5px;
+}
+
+/* Skroll yurgich ustiga borganida */
+::-webkit-scrollbar-thumb:hover {
+    background: navy;
+}
 
 .hero__left-sideBar{
     max-width: 300px;
     width: 100%;
     height: 100vh;
     /* position: absolute; */
+    overflow-y: scroll;
     margin-left: -15px;
+    
     left: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-background-color:  rgba(255, 255, 255, 0.05);
+    background-color:  rgba(255, 255, 255, 0.05);
 }
 
 .hero__left__icons{
@@ -194,7 +218,7 @@ background-color:  rgba(255, 255, 255, 0.05);
     padding: 6px 8px;
     border-radius: 8px;
     background: #ffffff1a;
-
+    
     color: #ffffff;
     font-size: 12px;
     font-weight: 400;
@@ -242,7 +266,7 @@ background-color:  rgba(255, 255, 255, 0.05);
     background-image: url(./images/sections_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-
+    
     padding: 227px 160px;
     display: flex;
     width: 100%;
@@ -280,7 +304,7 @@ background-color:  rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     background: #39965f;
     padding: 8px 44px;
-
+    
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
@@ -292,7 +316,7 @@ background-color:  rgba(255, 255, 255, 0.05);
     margin-right: auto;
     text-decoration: none;
     transition: .5s all ease-in-out;
-
+    
 }
 
 .hero__right__content_btn:hover{
