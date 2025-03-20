@@ -53,4 +53,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Sayt ochilganda so'nggi tanlangan tilni yuklash
     const savedLang = localStorage.getItem("selectedLang") || "uz";
     document.querySelector(`[data-lang="${savedLang}"]`).click();
+
+
+    // Filter qismi
+
+    // function toggleDropdown(id) {
+    //     document.getElementById(id).style.display = 
+    //         document.getElementById(id).style.display === "block" ? "none" : "block";
+    // }
+    
+    // function filterItems(category) {
+    //     let items = document.querySelectorAll('.items div');
+    //     items.forEach(item => {
+    //         item.style.display = category === 'all' || item.classList.contains(category) ? 'block' : 'none';
+    //     });
+    // }
 });
